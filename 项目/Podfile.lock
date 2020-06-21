@@ -1,0 +1,22 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - FMDB
+  - SVProgressHUD (~> 2.1.2)
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: 4035540f29a48a08804c38f1968c07ecbd2744b7
+
+COCOAPODS: 1.8.4

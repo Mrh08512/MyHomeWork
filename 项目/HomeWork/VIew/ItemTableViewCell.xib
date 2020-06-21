@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="ItemTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名字：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVK-9l-67U">
+                        <rect key="frame" x="14" y="14" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwe-gu-w0R">
+                        <rect key="frame" x="14" y="43" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TF1-RS-4Xe">
+                        <rect key="frame" x="67" y="14" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfl-aP-KtZ">
+                        <rect key="frame" x="67" y="43" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZVK-9l-67U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="0le-bV-9Pw"/>
+                    <constraint firstItem="lfl-aP-KtZ" firstAttribute="centerY" secondItem="mwe-gu-w0R" secondAttribute="centerY" id="7Xf-bp-gHi"/>
+                    <constraint firstItem="lfl-aP-KtZ" firstAttribute="leading" secondItem="TF1-RS-4Xe" secondAttribute="leading" id="8SZ-QJ-Eir"/>
+                    <constraint firstItem="TF1-RS-4Xe" firstAttribute="leading" secondItem="ZVK-9l-67U" secondAttribute="trailing" constant="10" id="FEC-qN-hR8"/>
+                    <constraint firstItem="mwe-gu-w0R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="dHE-5C-AUT"/>
+                    <constraint firstItem="TF1-RS-4Xe" firstAttribute="centerY" secondItem="ZVK-9l-67U" secondAttribute="centerY" id="hZc-xh-FsA"/>
+                    <constraint firstItem="ZVK-9l-67U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="ncW-bo-arf"/>
+                    <constraint firstItem="mwe-gu-w0R" firstAttribute="top" secondItem="ZVK-9l-67U" secondAttribute="bottom" constant="12" id="tbj-Fa-Bp8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="nameLabel" destination="TF1-RS-4Xe" id="Txj-bb-2Ua"/>
+                <outlet property="telLabel" destination="lfl-aP-KtZ" id="oPM-gN-R64"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="113.50446428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
